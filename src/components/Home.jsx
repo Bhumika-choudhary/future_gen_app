@@ -4,6 +4,46 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// images import
+
+import Img from "../assets/web-designing-company-India.png";
+
+
+
+//  services img
+
+import Img1 from "../assets/Web-Designing-Services.png";
+import Img2 from "../assets/Ecommerce-Development-Company.png";
+import Img3 from "../assets/Digital-Marketing-Services.png";
+import Img4 from "../assets/Mobile-App-Development.png";
+import Img5 from "../assets/Graphics-Designing-Services.png";
+import Img6 from "../assets/Software-Development-Company.png";
+
+// technologies img
+
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import javascript from "../assets/javascript1.png";
+import react from "../assets/react.png";
+import php from "../assets/php.png";
+import laravel from "../assets/laravel.png";
+import codeignetor from "../assets/codeignetor.png";
+import python from "../assets/python.png";
+import nodejs from "../assets/nodejs.png";
+import android from "../assets/android.png";
+import ios from "../assets/ios.png";
+import seo from "../assets/seo.png";
+// import smo from "../assets/smo.png";
+// import localseo from "../assets/Local-SEO.png";
+// import googleads from "../assets/Google_Ads.png";
+// import facebook from "../assets/facebook.png";
+// import ecommerce from "../assets/Ecommerce-SEO.png";
+
+
+
+
+
+
 const clients = [
   {
     img: "src/assets/grand-tambu.png",
@@ -102,24 +142,23 @@ const settings = {
   prevArrow: <PrevArrow />,
   nextArrow: <NextArrow />,
   responsive: [
-      {
-        breakpoint: 1200, // for large tablets or small laptops
-        settings: { slidesToShow: 4 },
-      },
-      {
-        breakpoint: 992, // tablets
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768, // landscape mobile
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 576, // small mobile
-        settings: { slidesToShow: 2 },
-      },
-    ],
-  
+    {
+      breakpoint: 1200, // for large tablets or small laptops
+      settings: { slidesToShow: 4 },
+    },
+    {
+      breakpoint: 992, // tablets
+      settings: { slidesToShow: 3 },
+    },
+    {
+      breakpoint: 768, // landscape mobile
+      settings: { slidesToShow: 2 },
+    },
+    {
+      breakpoint: 576, // small mobile
+      settings: { slidesToShow: 2 },
+    },
+  ],
 };
 
 export default function Home() {
@@ -165,68 +204,48 @@ export default function Home() {
   // technology
 
   const techItems = [
-    { name: "HTML", img: "src/assets/html.png", title: "HTML" },
-    { name: "CSS", img: "src/assets/css.png", title: "CSS" },
-    { name: "Bootstrap", img: "src/assets/botstrap.png", title: "Bootstrap" },
-    {
-      name: "JavaScript",
-      img: "src/assets/javascript1.png",
-      title: "JavaScript",
-    },
-    { name: "React", img: "src/assets/react.png", title: "React" },
-    { name: "Angular", img: "src/assets/angular.png", title: "Angular" },
-    { name: "PHP", img: "src/assets/php.png", title: "PHP" },
-    { name: "Laravel", img: "src/assets/laravel.png", title: "Laravel" },
-    {
-      name: "CodeIgniter",
-      img: "src/assets/codeignetor.png",
-      title: "CodeIgniter",
-    },
-    { name: "Python", img: "src/assets/python.png", title: "Python" },
-    { name: "Node.Js", img: "src/assets/nodejs.png", title: "Node.Js" },
-    { name: "Android", img: "src/assets/android.png", title: "Android" },
-    { name: "iOS", img: "src/assets/ios.png", title: "iOS" },
-    { name: "SEO", img: "src/assets/seo.png", title: "SEO" },
-    { name: "SMO", img: "src/assets/smo.png", title: "SMO" },
-    { name: "Local SEO", img: "src/assets/Local-SEO.png", title: "Local SEO" },
-    {
-      name: "Google Ads",
-      img: "src/assets/Google_Ads.png",
-      title: "Google Ads",
-    },
-    { name: "Facebook", img: "src/assets/facebook.png", title: "Facebook" },
-    {
-      name: "Ecommerce",
-      img: "src/assets/Ecommerce-SEO.png",
-      title: "Ecommerce",
-    },
+    { name: "HTML", img: html, title: "HTML" },
+    { name: "CSS", img: css, title: "CSS" },
+    { name: "JavaScript", img: javascript, title: "JavaScript" },
+    { name: "React", img: react, title: "React" },
+    { name: "PHP", img: php, title: "PHP" },
+    { name: "Laravel", img: laravel, title: "Laravel" },
+    { name: "CodeIgniter", img: codeignetor, title: "CodeIgniter" },
+    { name: "Python", img: python, title: "Python" },
+    { name: "Node.Js", img: nodejs, title: "Node.Js" },
+    { name: "Android", img: android, title: "Android" },
+    { name: "iOS", img: ios, title: "iOS" },
+    { name: "SEO", img: seo, title: "SEO" },
+    // { name: "SMO", img: smo, title: "SMO" },
+    // { name: "Local SEO", img: localseo, title: "Local SEO" },
+    // { name: "Google Ads", img: googleads, title: "Google Ads" },
+    // { name: "Facebook", img: facebook, title: "Facebook" },
+    // { name: "Ecommerce", img: ecommerce, title: "Ecommerce" },
   ];
-
-
 
   // work flow
 
   const steps = [
     {
-      img: "https://www.futuregenapps.com/frontend/img/1.png",
+      img: "src/assets/1.png",
       title: "Requirement understanding",
       alt: "best website designers in India",
       topMargin: "30px",
     },
     {
-      img: "https://www.futuregenapps.com/frontend/img/2.png",
+      img: "src/assets/2.png",
       title: "Research, Analysis & Design",
       alt: "Web development services in India",
       topMargin: "20px",
     },
     {
-      img: "https://www.futuregenapps.com/frontend/img/3.png",
+      img: "src/assets/3.png",
       title: "Development & Testing",
       alt: "Responsive website designing in India",
       topMargin: "30px",
     },
     {
-      img: "https://www.futuregenapps.com/frontend/img/4.png",
+      img: "src/assets/4.png",
       title: "Demo & Final Delivery",
       alt: "website maintenance services in India",
       topMargin: "30px",
@@ -237,19 +256,19 @@ export default function Home() {
 
   const ratings = [
     {
-      img: "https://www.futuregenapps.com/frontend/img/FutureGenApps-Google-RatingsN.png",
+      img: "src/assets/Google-RatingsN.png",
       link: "https://g.page/FutureGenApps-SoftwareSolutions",
       alt: "Website Designing Company in India",
       title: "FutureGenApps Google Ratings",
     },
     {
-      img: "https://www.futuregenapps.com/frontend/img/FutureGenApps-Facebook-Ratings.png",
+      img: "src/assets/Facebook-Ratings.png",
       link: "https://www.facebook.com/FutureGenApp",
       alt: "website development company in India",
       title: "FutureGenApps Facebook Ratings",
     },
     {
-      img: "https://www.futuregenapps.com/frontend/img/FutureGenApps-JustDial-Ratings.png",
+      img: "src/assets/JustDial-Ratings.png",
       link: "https://www.justdial.com/Delhi/Future-Gen-Apps-Software-Solutions-Behind-Wave-Cinemas-Kaushambi/011PXX11-XX11-170516110010-F9I5_BZDET",
       alt: "Best Web designing Company in India",
       title: "FutureGenApps JustDial Ratings",
@@ -398,7 +417,7 @@ export default function Home() {
                     Digital Marketing Services:
                   </span>
                   <br />
-                  <span id="word" className="text-highlight" >
+                  <span id="word" className="text-highlight">
                     {text}
                   </span>
                   <span id="cursor"></span>
@@ -436,7 +455,6 @@ export default function Home() {
 
             {/* Right Column */}
             <div className="col-md-4">
-  
               <div className="contact-box">
                 <h5 className="contact-title">
                   Call Now:{" "}
@@ -502,9 +520,7 @@ export default function Home() {
         </div>
       </section>
 
-
       {/*-----------mission section-----------*/}
-
 
       <section className="mission-section hide">
         <div className="container">
@@ -545,13 +561,13 @@ export default function Home() {
         <div className="container">
           <h2
             className="text-center"
-            style={{ color: "#010948", fontSize: "30px"  }}
+            style={{ color: "#010948", fontSize: "30px" }}
           >
             Explore Our Digital Marketing Services in India
           </h2>
           <h3
             className="text-center"
-            style={{ color: "#010948", fontSize: "20px", fontWeight:"bold" }}
+            style={{ color: "#010948", fontSize: "20px", fontWeight: "bold" }}
           >
             <span style={{ color: "#207DE9" }}>FutureGenApps®</span> - Best
             Website Designing Company in India
@@ -567,7 +583,7 @@ export default function Home() {
                 <center>
                   <img
                     className="fga-img"
-                    src="https://www.futuregenapps.com/frontend/img/Web-Designing-Services-in-Delhi-NCR-FutureGenApps.png"
+                    src={Img1}
                     alt="Web Designing Services in India - FutureGenApps®"
                     title="web designing company in India"
                     style={{
@@ -586,7 +602,7 @@ export default function Home() {
                   <h4
                     className="text-center"
                     style={{
-                      color: "#010948" ,
+                      color: "#010948",
                     }}
                   >
                     Web Designing Services
@@ -638,7 +654,7 @@ export default function Home() {
                 <center>
                   <img
                     className="fga-img"
-                    src="https://www.futuregenapps.com/frontend/img/Ecommerce-Development-Company-in-India-FutureGenApps.png"
+                    src={Img2}
                     alt="Web Development Company in India - FutureGenApps®"
                     title="website development in India"
                     style={{
@@ -697,7 +713,7 @@ export default function Home() {
                 <center>
                   <img
                     className="fga-img"
-                    src="https://www.futuregenapps.com/frontend/img/Digital-Marketing-Services-in-Delhi-NCR-FutureGenApps.png"
+                    src={Img3}
                     alt="Website Design India"
                     title="website designing in India"
                     style={{
@@ -761,7 +777,7 @@ export default function Home() {
                 <center>
                   <img
                     className="fga-img"
-                    src="https://www.futuregenapps.com/frontend/img/Mobile-App-Development-Company-in-Delhi-NCR-FutureGenApps.png"
+                    src={Img4}
                     alt="Web Design Company in India"
                     title="Web Design Company in India"
                     style={{
@@ -819,7 +835,7 @@ export default function Home() {
                 <center>
                   <img
                     className="fga-img"
-                    src="https://www.futuregenapps.com/frontend/img/Graphics-Designing-Services-in-Delhi-NCR-FutureGenApps.png"
+                    src={Img5}
                     alt="India Website designing Company"
                     title="India Website designing Company"
                     style={{
@@ -847,9 +863,9 @@ export default function Home() {
                     Graphics Designing Services
                   </h4>
                 </a>
-                <p className="text-center" style={{ padding: "30px"}}>
-                  Our Graphics Designing services include Logo, 
-                  Brochure Designing, and Printing Services.
+                <p className="text-center" style={{ padding: "30px" }}>
+                  Our Graphics Designing services include Logo, Brochure
+                  Designing, and Printing Services.
                 </p>
                 <center>
                   <a
@@ -878,7 +894,7 @@ export default function Home() {
                 <center>
                   <img
                     className="fga-img"
-                    src="https://www.futuregenapps.com/frontend/img/Software-Development-Company-in-Delhi-NCR-FutureGenApps.png"
+                    src={Img6}
                     alt="website designer in India"
                     title="website designer in India"
                     style={{
@@ -1003,11 +1019,11 @@ export default function Home() {
                         fontSize: "20px",
                         textAlign: "center",
                         marginTop: "20px",
-                        fontWeight:"bold"
+                        fontWeight: "bold",
                       }}
                     >
                       {item.title}
-                    </h5>{" "}
+                    </h5>
                   </div>
                 ))}
               </div>
@@ -1032,7 +1048,7 @@ export default function Home() {
 
                 <p className="about-paragraph">
                   <a
-                    href="https://www.futuregenapps.com/"
+                    href=""
                     className="about-link"
                   >
                     FutureGenApps®
@@ -1041,7 +1057,7 @@ export default function Home() {
                   a local market provider of digital marketing services to one
                   with a global clientele. We are a top service provider for{" "}
                   <a
-                    href="https://www.futuregenapps.com/"
+                    href=""
                     className="about-link"
                   >
                     website design and development
@@ -1065,7 +1081,7 @@ export default function Home() {
               {/* Image Content */}
               <div className="col-lg-6 about-image text-center">
                 <img
-                  src="src/assets/web-designing-company-India.png"
+                  src={Img}
                   alt="website designing in India"
                   className="about-img"
                 />
@@ -1093,9 +1109,8 @@ export default function Home() {
                   href={rating.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  title={rating.title }
-                    className="rating-link"
-
+                  title={rating.title}
+                  className="rating-link"
                 >
                   <img
                     src={rating.img}
@@ -1131,7 +1146,7 @@ export default function Home() {
                   <strong>website design service provider in India</strong>. Our
                   vision is to offer premium{" "}
                   <a
-                    href="https://www.futuregenapps.com"
+                    href=""
                     className="video-link"
                     style={{
                       textDecoration: "none",
@@ -1144,7 +1159,7 @@ export default function Home() {
                   website maintenance services. Hence, we designate a dedicated
                   resource to provide after-sale support and{" "}
                   <a
-                    href="https://www.futuregenapps.com/website-maintenance-services-in-delhi"
+                    href=""
                     className="video-link"
                     style={{
                       textDecoration: "none",
@@ -1229,10 +1244,7 @@ export default function Home() {
           <div className="row align-items-center">
             {/* Left Text Column */}
             <div className="col-lg-5 text-col">
-              <h2
-                className="leadtxt2"
-                style={{fontSize:"30px"}}
-              >
+              <h2 className="leadtxt2" style={{ fontSize: "30px" }}>
                 Why hire FutureGenApps® for Web Designing Services in India?
               </h2>
               <p
@@ -1297,7 +1309,13 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-              <h2 className="text-white" style={{ fontSize: "30px" ,fontFamily: "'Source Serif Pro', serif",}}>
+              <h2
+                className="text-white"
+                style={{
+                  fontSize: "30px",
+                  fontFamily: "'Source Serif Pro', serif",
+                }}
+              >
                 Looking for the Best{" "}
                 <a href="" style={{ color: "white", textDecoration: "none" }}>
                   Web Development Company
@@ -1371,7 +1389,15 @@ export default function Home() {
           <div className="container">
             <div className="row g-5">
               <div className="col-lg-6 fade-up">
-                <h3 className="section-title" style={{ paddingTop: "30px" ,fontFamily: "'Source Serif Pro', serif", fontWeight:"bold", fontSize:"30px"}}>
+                <h3
+                  className="section-title"
+                  style={{
+                    paddingTop: "30px",
+                    fontFamily: "'Source Serif Pro', serif",
+                    fontWeight: "bold",
+                    fontSize: "30px",
+                  }}
+                >
                   Top Website Designing Company in India
                 </h3>
                 <hr className="section-hr" />
@@ -1443,7 +1469,9 @@ export default function Home() {
       <section className="slider-area">
         <div className="container">
           <h3 className="text-center">
-            <span style={{ color: "#010948", fontWeight:"bold" , fontSize:"29px" }}>
+            <span
+              style={{ color: "#010948", fontWeight: "bold", fontSize: "29px" }}
+            >
               Trusted by Enterprises across Industries
             </span>
           </h3>
@@ -1529,7 +1557,11 @@ export default function Home() {
               >
                 <h3
                   className="text-center"
-                  style={{ color: "#0E3D52", fontSize: "30px" , fontWeight:"bold" }}
+                  style={{
+                    color: "#0E3D52",
+                    fontSize: "30px",
+                    fontWeight: "bold",
+                  }}
                 >
                   Build Your Online Presence with the Top Web Designing Company
                   in India
@@ -1609,21 +1641,21 @@ export default function Home() {
 
       <section>
         <div className="faq-container">
-        <h2
-  className="faq-heading"
-  style={{
-    fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-  }}
->
-  <span className="small-text">
-    Important Frequently Asked Questions to
-  </span>
-  <br />
-  <span className="large-text">
-    Hire Website Designing Companies in India
-  </span>
-</h2>
+          <h2
+            className="faq-heading"
+            style={{
+              fontFamily: "'Source Serif Pro', serif",
+              fontWeight: "bold",
+            }}
+          >
+            <span className="small-text">
+              Important Frequently Asked Questions to
+            </span>
+            <br />
+            <span className="large-text">
+              Hire Website Designing Companies in India
+            </span>
+          </h2>
 
           <div className="faq-list">
             {faqs.map((faq, index) => (
@@ -1631,13 +1663,15 @@ export default function Home() {
                 <button
                   className={`faq-question ${
                     activeIndex === index ? "active" : ""
-                  }`}  
+                  }`}
                   onClick={() => toggleFAQ(index)}
                 >
-                  <h4   style={{
-    fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-  }}>
+                  <h4
+                    style={{
+                      fontFamily: "'Source Serif Pro', serif",
+                      fontWeight: "bold",
+                    }}
+                  >
                     FAQ{index + 1}: {faq.question}
                   </h4>
                 </button>
@@ -1666,8 +1700,14 @@ export default function Home() {
         <br />
         <div className="container">
           <h3 className="text-center">
-            <span style={{ color: "#010948", fontSize: "30px", fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",}}>
+            <span
+              style={{
+                color: "#010948",
+                fontSize: "30px",
+                fontFamily: "'Source Serif Pro', serif",
+                fontWeight: "bold",
+              }}
+            >
               Get Inspired: Explore Our Latest Blogs
               <br />
             </span>
@@ -1708,16 +1748,21 @@ export default function Home() {
                       fontSize: "18px",
                       marginTop: "20px",
                       textAlign: "center",
-                        fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-    paddingLeft:"10px"
+                      fontFamily: "'Source Serif Pro', serif",
+                      fontWeight: "bold",
+                      paddingLeft: "10px",
                     }}
                   >
                     Importance of Regular Website AMC Services for your Business
                   </h4>
-                  <h5 style={{ fontSize: "20px", textAlign: "center" ,fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-    }}>
+                  <h5
+                    style={{
+                      fontSize: "20px",
+                      textAlign: "center",
+                      fontFamily: "'Source Serif Pro', serif",
+                      fontWeight: "bold",
+                    }}
+                  >
                     Posted: 6th Jan, 2025
                   </h5>
                 </div>
@@ -1735,8 +1780,8 @@ export default function Home() {
                   color: "#010948",
                   fontSize: "30px",
                   textDecoration: "none",
-                     fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
+                  fontFamily: "'Source Serif Pro', serif",
+                  fontWeight: "bold",
                 }}
               >
                 <div
@@ -1759,16 +1804,20 @@ export default function Home() {
                       fontSize: "18px",
                       marginTop: "20px",
                       textAlign: "center",
-                         fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-   
+                      fontFamily: "'Source Serif Pro', serif",
+                      fontWeight: "bold",
                     }}
                   >
                     What is Organic Digital Marketing &amp; its Benefits?
                   </h4>
-                  <h5 style={{ fontSize: "20px", textAlign: "center",   fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
- }}>
+                  <h5
+                    style={{
+                      fontSize: "20px",
+                      textAlign: "center",
+                      fontFamily: "'Source Serif Pro', serif",
+                      fontWeight: "bold",
+                    }}
+                  >
                     Posted: 1st Jan, 2025
                   </h5>
                 </div>
@@ -1808,16 +1857,20 @@ export default function Home() {
                       fontSize: "18px",
                       marginTop: "20px",
                       textAlign: "center",
-                         fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
+                      fontFamily: "'Source Serif Pro', serif",
+                      fontWeight: "bold",
                     }}
                   >
                     Grow SEO Ranking with Social Bookmarking Sites.
                   </h4>
-                  <h5 style={{ fontSize: "20px", textAlign: "center" ,   fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-    
-    }}>
+                  <h5
+                    style={{
+                      fontSize: "20px",
+                      textAlign: "center",
+                      fontFamily: "'Source Serif Pro', serif",
+                      fontWeight: "bold",
+                    }}
+                  >
                     Posted: 31st Dec, 2024
                   </h5>
                 </div>
@@ -1858,8 +1911,8 @@ export default function Home() {
                     color: "#15233C",
                     fontSize: "30px",
                     textAlign: "center",
-                       fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
+                    fontFamily: "'Source Serif Pro', serif",
+                    fontWeight: "bold",
                   }}
                 >
                   Every Great Business Grow Online With a Great Website Design
@@ -2207,7 +2260,6 @@ export default function Home() {
                     fontSize: "14px",
                     color: "white",
                     textDecoration: "none",
-                   
                   }}
                   title="E-Commerce Website"
                   href=""
@@ -2309,7 +2361,13 @@ export default function Home() {
 
               {/* Web Designing */}
               <div className="col-lg-3 col-md-6">
-                <h4 style={{ color: "#38E8B6", fontSize: "24px" ,paddingLeft: "13px"}}>
+                <h4
+                  style={{
+                    color: "#38E8B6",
+                    fontSize: "24px",
+                    paddingLeft: "13px",
+                  }}
+                >
                   Web Designing
                 </h4>
                 <a
@@ -2433,7 +2491,13 @@ export default function Home() {
 
               {/* Web Development */}
               <div className="col-lg-3 col-md-6">
-                <h4 style={{ color: "#38E8B6", fontSize: "24px",paddingLeft: "13px" }}>
+                <h4
+                  style={{
+                    color: "#38E8B6",
+                    fontSize: "24px",
+                    paddingLeft: "13px",
+                  }}
+                >
                   Web Development
                 </h4>
                 <a
@@ -2570,7 +2634,13 @@ export default function Home() {
 
               {/* Web Portal Development */}
               <div className="col-lg-3 col-md-6">
-                <h4 style={{ color: "#38E8B6", fontSize: "24px",paddingLeft: "13px" }}>
+                <h4
+                  style={{
+                    color: "#38E8B6",
+                    fontSize: "24px",
+                    paddingLeft: "13px",
+                  }}
+                >
                   Web Portal Development
                 </h4>
                 <a
@@ -3029,7 +3099,7 @@ export default function Home() {
                   >
                     <a
                       href="about"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="About FutureGenApps"
                     >
                       About
@@ -3039,7 +3109,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="privacy-policy"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="FutureGenApps privacy policy"
                     >
                       Privacy Policy
@@ -3049,7 +3119,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="refund-policy"
-                      style={{ color: "white" , textDecoration:"none"}}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="FutureGenApps refund policy"
                     >
                       Refund Policy
@@ -3059,7 +3129,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="terms-and-condition"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Terms & Conditions"
                     >
                       Terms &amp; Conditions
@@ -3069,7 +3139,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="careers"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="About Job Openings"
                     >
                       Job Openings
@@ -3079,7 +3149,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="#"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="FutureGenApps Internship"
                     >
                       Internship
@@ -3089,7 +3159,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="#"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="FutureGenApps Training"
                     >
                       Training
@@ -3160,7 +3230,7 @@ export default function Home() {
                   <li style={{ float: "left" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="website design Delhi FutureGenApps"
                     >
                       Delhi
@@ -3171,7 +3241,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="website design noida FutureGenApps"
                     >
                       Noida
@@ -3182,7 +3252,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title=" FutureGenApps Ghaziabad Web Design Company"
                     >
                       Ghaziabad
@@ -3193,7 +3263,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title=" website designing company in Meerut"
                     >
                       Meerut
@@ -3204,7 +3274,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design company Faridabad"
                     >
                       Faridabad
@@ -3215,7 +3285,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title=" FutureGenApps Kaushambi website design company"
                     >
                       Kaushambi
@@ -3226,7 +3296,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title=" Website designing company in Gurgaon"
                     >
                       Gurugram
@@ -3237,7 +3307,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title=" FutureGenApps Indirapuram web design agency"
                     >
                       Indirapuram
@@ -3248,7 +3318,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title=" FutureGenApps website designing company in Vaishali"
                     >
                       Vaishali
@@ -3259,7 +3329,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title=" FutureGenApps East Delhi website design company"
                     >
                       East Delhi
@@ -3270,7 +3340,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="website designing company in Moradabad"
                     >
                       Moradabad
@@ -3280,7 +3350,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="website designing company in Hyderabad"
                     >
                       Hyderabad
@@ -3290,7 +3360,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="website designing company in Bangalore"
                     >
                       Bangalore
@@ -3300,7 +3370,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="website designing company in Coimbatore"
                     >
                       Coimbatore
@@ -3328,7 +3398,7 @@ export default function Home() {
                   <li style={{ float: "left" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="website design company in Hoshiarpur FutureGenApps"
                     >
                       Hoshiarpur
@@ -3339,7 +3409,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none"}}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="website design company in Amritsar FutureGenApps"
                     >
                       Shri Amritsar Sahib
@@ -3350,7 +3420,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="FutureGenApps Ludhiana Web Design Company"
                     >
                       Ludhiana
@@ -3361,7 +3431,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="website designing company in Jalandhar"
                     >
                       Jalandhar
@@ -3388,7 +3458,7 @@ export default function Home() {
                   <li style={{ float: "left" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in India"
                     >
                       India
@@ -3399,7 +3469,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in USA"
                     >
                       USA
@@ -3410,7 +3480,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Canada"
                     >
                       Canada
@@ -3421,7 +3491,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Switzerland"
                     >
                       Switzerland
@@ -3432,7 +3502,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Australia"
                     >
                       Australia
@@ -3443,7 +3513,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in New Zealand"
                     >
                       New Zealand
@@ -3454,7 +3524,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in UK"
                     >
                       UK
@@ -3465,7 +3535,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Germany"
                     >
                       Germany
@@ -3476,7 +3546,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Japan"
                     >
                       Japan
@@ -3487,7 +3557,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in France"
                     >
                       France
@@ -3498,7 +3568,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Greece"
                     >
                       Greece
@@ -3509,7 +3579,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Denmark"
                     >
                       Denmark
@@ -3520,7 +3590,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Poland"
                     >
                       Poland
@@ -3531,7 +3601,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Norway"
                     >
                       Norway
@@ -3542,7 +3612,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Brazil"
                     >
                       Brazil
@@ -3553,7 +3623,7 @@ export default function Home() {
                   <li style={{ float: "left" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in South Korea"
                     >
                       South Korea
@@ -3564,7 +3634,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Dubai"
                     >
                       Dubai
@@ -3575,7 +3645,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href=""
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Kuwait"
                     >
                       Kuwait
@@ -3586,7 +3656,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Saudi Arabia"
                     >
                       Saudi Arabia
@@ -3597,7 +3667,7 @@ export default function Home() {
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
                       href="/"
-                      style={{ color: "white", textDecoration:"none" }}
+                      style={{ color: "white", textDecoration: "none" }}
                       title="Website design Company in Qatar"
                     >
                       Qatar
@@ -3608,9 +3678,13 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-4">
-              <h6 style={{ color: "#38E8B6",    fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-   }}>
+              <h6
+                style={{
+                  color: "#38E8B6",
+                  fontFamily: "'Source Serif Pro', serif",
+                  fontWeight: "bold",
+                }}
+              >
                 © {new Date().getFullYear()} FutureGenApps® — All Rights
                 Reserved
               </h6>
@@ -3641,9 +3715,12 @@ export default function Home() {
               >
                 <h3
                   className="text-center"
-                  style={{ color: "#0E3D52", fontSize: "20px" ,   fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-}}
+                  style={{
+                    color: "#0E3D52",
+                    fontSize: "20px",
+                    fontFamily: "'Source Serif Pro', serif",
+                    fontWeight: "bold",
+                  }}
                 >
                   Benefits of Hiring a Professional Web Development Company in
                   India
@@ -3701,9 +3778,12 @@ export default function Home() {
               >
                 <h3
                   className="text-center"
-                  style={{ color: "#0E3D52", fontSize: "20px",   fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-    }}
+                  style={{
+                    color: "#0E3D52",
+                    fontSize: "20px",
+                    fontFamily: "'Source Serif Pro', serif",
+                    fontWeight: "bold",
+                  }}
                 >
                   Start your Website Development Journey with FutureGenApps
                   <br />
@@ -3765,9 +3845,12 @@ export default function Home() {
               >
                 <h3
                   className="text-center"
-                  style={{ color: "#0E3D52", fontSize: "20px",    fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-     }}
+                  style={{
+                    color: "#0E3D52",
+                    fontSize: "20px",
+                    fontFamily: "'Source Serif Pro', serif",
+                    fontWeight: "bold",
+                  }}
                 >
                   Hire Top Website Design Company in India
                 </h3>
@@ -3809,7 +3892,7 @@ export default function Home() {
 
       {/*----------looking hire section----------*/}
 
-    <section
+      <section
         style={{
           background: "#15233C",
           paddingTop: "30px",
@@ -3819,9 +3902,14 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-              <h2 className="text-white" style={{ fontSize: "30px",   fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-     }}>
+              <h2
+                className="text-white"
+                style={{
+                  fontSize: "30px",
+                  fontFamily: "'Source Serif Pro', serif",
+                  fontWeight: "bold",
+                }}
+              >
                 Looking for the Best{" "}
                 <a href="" style={{ color: "white", textDecoration: "none" }}>
                   Web Development Company
@@ -3881,7 +3969,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/*--------business growth-----------*/}
 
       <section
@@ -3903,9 +3990,12 @@ export default function Home() {
               >
                 <h3
                   className="text-center"
-                  style={{ color: "#15233C", fontSize: "24px",   fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-   }}
+                  style={{
+                    color: "#15233C",
+                    fontSize: "24px",
+                    fontFamily: "'Source Serif Pro', serif",
+                    fontWeight: "bold",
+                  }}
                 >
                   How Investing in Your Website Drives Business Growth
                   <br />
@@ -3971,9 +4061,12 @@ export default function Home() {
               >
                 <h3
                   className="text-center"
-                  style={{ color: "#15233C", fontSize: "24px" ,   fontFamily: "'Source Serif Pro', serif",
-    fontWeight: "bold",
-    }}
+                  style={{
+                    color: "#15233C",
+                    fontSize: "24px",
+                    fontFamily: "'Source Serif Pro', serif",
+                    fontWeight: "bold",
+                  }}
                 >
                   Top Rated Web Development Company in India
                   <br />
@@ -3989,24 +4082,21 @@ export default function Home() {
                     textAlign: "justify",
                     fontSize: "16px",
                     fontWeight: "400",
-                    paddingBottom:"30px"
+                    paddingBottom: "30px",
                   }}
                 >
-                  Are you searching for the{" "}
-                  website design company in India who can
-                  provide professional web development services to bring your
-                  business/idea online? FutureGenApps® is established as among
-                  the top{" "}
-                  website development companies in India. We
-                  have a team of website experts in India having years of
-                  experience in developing corporate websites which help us
-                  stand out from the other web designing agencies. We ensure all
-                  our web development projects are designed and developed using
-                  cutting-edge web technologies. Being one of the{" "}
-                  best web design companies in India, we have
-                  years of experience working with top brands and companies to
-                  develop their corporate websites and implement digital
-                  marketing strategies.
+                  Are you searching for the website design company in India who
+                  can provide professional web development services to bring
+                  your business/idea online? FutureGenApps® is established as
+                  among the top website development companies in India. We have
+                  a team of website experts in India having years of experience
+                  in developing corporate websites which help us stand out from
+                  the other web designing agencies. We ensure all our web
+                  development projects are designed and developed using
+                  cutting-edge web technologies. Being one of the best web
+                  design companies in India, we have years of experience working
+                  with top brands and companies to develop their corporate
+                  websites and implement digital marketing strategies.
                 </p>
               </div>
             </div>
