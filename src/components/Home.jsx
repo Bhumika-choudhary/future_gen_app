@@ -19,6 +19,12 @@ import Img4 from "../assets/Mobile-App-Development.png";
 import Img5 from "../assets/Graphics-Designing-Services.png";
 import Img6 from "../assets/Software-Development-Company.png";
 
+
+
+
+
+
+
 // technologies img
 
 import html from "../assets/html.png";
@@ -42,55 +48,72 @@ import seo from "../assets/seo.png";
 
 
 
+// clients Image 
+
+
+import GrandTambu from "../assets/grand-tambu.png";
+import UnitedHomez from "../assets/United_Homez.png";
+import IAPRichs from "../assets/IAP-Logo_Small.png";
+import VetaasNatuure from "../assets/vetaasnature.png";
+import Autoflex from "../assets/autoflex logo -FutureGenApps.jpg";
+import Maplebear from "../assets/Maplebear.png";
+import Graphic from "../assets/3sgraphicsolutions.jpg";
+import Cambridge from "../assets/cambridge-logo.png";
+import HCI from "../assets/Logo HCI Technologies.png";
+
+
+
 
 
 const clients = [
+ 
   {
-    img: "src/assets/grand-tambu.png",
+    img: GrandTambu,
     alt: "Grand Tambu",
     title: "Grand Tambu",
   },
   {
-    img: "src/assets/United_Homez.png",
+    img: UnitedHomez,
     alt: "United Homez",
     title: "United Homez",
   },
   {
-    img: "src/assets/IAP-Logo_Small.png",
+    img: IAPRichs,
     alt: "IAP-Richs",
     title: "IAP-Richs",
   },
   {
-    img: "src/assets/vetaasnature.png",
+    img: VetaasNatuure,
     alt: "Vetaas Natuure",
     title: "Vetaas Natuure",
   },
   {
-    img: "src/assets/autoflex logo -FutureGenApps.jpg",
+    img: Autoflex,
     alt: "Autoflex",
     title: "Autoflex",
   },
   {
-    img: "src/assets/Maplebear.png",
+    img: Maplebear,
     alt: "Mapple Bear South Asia",
     title: "Mapple Bear South Asia",
   },
   {
-    img: "src/assets/3sgraphicsolutions.jpg",
+    img: Graphic,
     alt: "3 S Graphic Solutions",
     title: "3 S Graphic Solutions",
   },
   {
-    img: "src/assets/cambridge-logo.png",
+    img: Cambridge,
     alt: "Cambridge Education Consultants",
     title: "Cambridge Education Consultants",
   },
   {
-    img: "src/assets/Logo HCI Technologies.png",
+    img: HCI,
     alt: "HCI Technologies",
     title: "HCI Technologies",
   },
 ];
+
 
 // Custom Buttons
 const PrevArrow = (props) => (
@@ -227,13 +250,13 @@ export default function Home() {
 
   const steps = [
     {
-      img: "src/assets/1.png",
+      img: "../assets/1.png",
       title: "Requirement understanding",
       alt: "best website designers in India",
       topMargin: "30px",
     },
     {
-      img: "src/assets/2.png",
+      img: "../assets/2.png",
       title: "Research, Analysis & Design",
       alt: "Web development services in India",
       topMargin: "20px",
