@@ -20,7 +20,12 @@ import Img5 from "../assets/Graphics-Designing-Services.png";
 import Img6 from "../assets/Software-Development-Company.png";
 
 
+// work flow img 
 
+import best from "../assets/1.png";
+import Research from "../assets/2.png";
+import Development from "../assets/3.png";
+import Demo from "../assets/4.png";
 
 
 
@@ -248,27 +253,28 @@ export default function Home() {
 
   // work flow
 
+
   const steps = [
     {
-      img: "../assets/1.png",
+      img: best,
       title: "Requirement understanding",
       alt: "best website designers in India",
       topMargin: "30px",
     },
     {
-      img: "../assets/2.png",
+      img:Research,
       title: "Research, Analysis & Design",
       alt: "Web development services in India",
       topMargin: "20px",
     },
     {
-      img: "src/assets/3.png",
+      img: Development,
       title: "Development & Testing",
       alt: "Responsive website designing in India",
       topMargin: "30px",
     },
     {
-      img: "src/assets/4.png",
+      img: Demo,
       title: "Demo & Final Delivery",
       alt: "website maintenance services in India",
       topMargin: "30px",
