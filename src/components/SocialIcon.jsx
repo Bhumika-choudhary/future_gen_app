@@ -1,6 +1,6 @@
 import "./SocialIcon.css";
 
-const SocialIconBar = () => {
+const SocialIcon = () => {
   return (
     <div className="social-icon-bar">
       <a href="" className="icon phone" title="+91 7428623109">
@@ -38,4 +38,4 @@ const SocialIconBar = () => {
   );
 };
 
-export default SocialIconBar;
+export default SocialIcon;
