@@ -1,15 +1,11 @@
-import  { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import logo from "../assets/Logo-FutureGenApps.png";
 import companyProfile from "../assets/FutureGenApps_Company_Profile.pdf";
-import "./Navbar.css"; 
-
-
-
-
+import "./Navbar.css";
 
 const Navbar = () => {
-
-     const [scrollWidth, setScrollWidth] = useState(0);
+  const [scrollWidth, setScrollWidth] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +23,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   return (
     <>
       {/* ---------- 🔹 TOPBAR SECTION ---------- */}
@@ -35,17 +30,14 @@ const Navbar = () => {
         <div className="row align-items-center">
           {/* Left - Contact Info */}
           <div className="col-md-5 text-md-start text-center">
-            <p className="mb-0" style={{ fontSize: "14px", display:"flex"  }}>
-              <a
-                href=""
-                style={{ color: "white" }}
-                title="+91 7428623109"
-              >
-                <i className="fa-solid fa-phone"></i> +91 7428623109, +91 9650436809
+            <p className="mb-0" style={{ fontSize: "14px", display: "flex" }}>
+              <a href="" style={{ color: "white" }} title="+91 7428623109">
+                <i className="fa-solid fa-phone"></i> +91 7428623109, +91
+                9650436809
               </a>
               <a
                 href=""
-                style={{ color: "white", paddingLeft:"15px" }}
+                style={{ color: "white", paddingLeft: "15px" }}
                 title="info@futuregenapps.com"
               >
                 <i className="fa fa-envelope"></i>info@futuregenapps.com
@@ -55,21 +47,78 @@ const Navbar = () => {
 
           {/* Right - Links */}
           <div className="col-md-7 ">
-            <a href="/" style={{ color: "white", fontSize: "14px" }}>
+            <Link
+              to="/"
+              style={{
+                color: "white",
+                marginLeft: "20px",
+                fontSize: "14px",
+                textDecoration: "none",
+              }}
+            >
               Home
-            </a>
-            <a href="about" style={{ color: "white", marginLeft: "20px", fontSize: "14px" }}>
+            </Link>
+            <Link
+              to="/about"
+              style={{
+                color: "white",
+                marginLeft: "20px",
+                fontSize: "14px",
+                textDecoration: "none",
+              }}
+            >
               About
-            </a>
-            <a href="our-portfolio" style={{ color: "white", marginLeft: "20px", fontSize: "14px" }}>
+            </Link>
+
+            {/* <a href="/About" style={{ color: "white", marginLeft: "20px", fontSize: "14px" }}>
+              About
+            </a> */}
+
+            <Link
+              to="/Portfolio"
+              style={{
+                color: "white",
+                marginLeft: "20px",
+                fontSize: "14px",
+                textDecoration: "none",
+              }}
+            >
               Portfolio
-            </a>
-            <a href="careers" style={{ color: "white", marginLeft: "20px", fontSize: "14px" }}>
+            </Link>
+            <Link
+              to="/Career"
+              style={{
+                color: "white",
+                marginLeft: "20px",
+                fontSize: "14px",
+                textDecoration: "none",
+              }}
+            >
               Career
-            </a>
-            <a href="blog" style={{ color: "white", marginLeft: "20px", fontSize: "14px" }}>
+            </Link>
+            <Link
+              to="/Blog"
+              style={{
+                color: "white",
+                marginLeft: "20px",
+                fontSize: "14px",
+                textDecoration: "none",
+              }}
+            >
               Blog
-            </a>
+            </Link>
+            <Link
+              to="/EarnMoney"
+              style={{
+                color: "white",
+                marginLeft: "20px",
+                fontSize: "14px",
+                textDecoration: "none",
+              }}
+            >
+              Refer &amp; Earn Money
+            </Link>
+
             <a
               href=""
               style={{ color: "white", marginLeft: "20px", fontSize: "14px" }}
@@ -82,7 +131,8 @@ const Navbar = () => {
               rel="noopener noreferrer"
               style={{ color: "white", marginLeft: "20px", fontSize: "14px" }}
             >
-              <i className="fa fa-download" style={{ color: "#F59260" }}></i> Download Profile
+              <i className="fa fa-download" style={{ color: "#F59260" }}></i>{" "}
+              Download Profile
             </a>
           </div>
         </div>
@@ -103,179 +153,194 @@ const Navbar = () => {
           />
         </a>
 
-       <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
         {/* Navbar Links */}
         {/* Collapsible Menu */}
-      <div className="collapse navbar-collapse" id="navbarCollapse">
-        <div className="navbar-nav ms-auto p-4 p-lg-0">
-          {/* Company Dropdown */}
-          <div className="nav-item dropdown">
-            <a
-              href="#"
-              className="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-              Company
-            </a>
-            <div className="dropdown-menu fade-down m-0">
-              <a href="about" className="dropdown-item head">
-                About FutureGenApps®
-              </a>
-              <hr className="fga-line" />
-              <a href="our-mission-and-vision" className="dropdown-item head">
-                Our Mission & Vision
-              </a>
-              <hr className="fga-line" />
-              <a href="why-futuregenapps" className="dropdown-item head">
-                Why FutureGenApps®
-              </a>
-              <hr className="fga-line" />
-              <a href="our-success-stories" className="dropdown-item head">
-                Testimonials
-              </a>
-              <hr className="fga-line" />
-              <a href="our-process" className="dropdown-item head">
-                Our Process
-              </a>
-            </div>
-          </div>
-
-          {/* Website Designing Dropdown */}
-          <div className="nav-item dropdown">
-            <a
-              href="#"
-              className="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-              Website Designing
-            </a>
-            <div className="dropdown-menu fade-down m-0">
-              <a href="static-website-design" className="dropdown-item head">
-                Static Website Design
-              </a>
-              <hr className="fga-line" />
-              <a href="dynamic-website-design" className="dropdown-item head">
-                Dynamic Website Design
-              </a>
-              <hr className="fga-line" />
-              <a href="ecommerce-website-design" className="dropdown-item head">
-                E-Commerce Website Design
-              </a>
-              <hr className="fga-line" />
-              <a href="corporate-website-design" className="dropdown-item head">
-                Corporate Website Design
-              </a>
-              <hr className="fga-line" />
-              <a href="responsive-website-design" className="dropdown-item head">
-                Responsive Website Design
-              </a>
-              <hr className="fga-line" />
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <div className="navbar-nav ms-auto p-4 p-lg-0">
+            {/* Company Dropdown */}
+            <div className="nav-item dropdown">
               <a
-                href="landing-page-website-design"
-                className="dropdown-item head"
+                href="#"
+                className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
               >
-                Landing Page Website Design Services
+                Company
               </a>
+              <div className="dropdown-menu fade-down m-0">
+                <a href="about" className="dropdown-item head">
+                  About FutureGenApps®
+                </a>
+                <hr className="fga-line" />
+                <a href="our-mission-and-vision" className="dropdown-item head">
+                  Our Mission & Vision
+                </a>
+                <hr className="fga-line" />
+                <a href="why-futuregenapps" className="dropdown-item head">
+                  Why FutureGenApps®
+                </a>
+                <hr className="fga-line" />
+                <a href="our-success-stories" className="dropdown-item head">
+                  Testimonials
+                </a>
+                <hr className="fga-line" />
+                <a href="our-process" className="dropdown-item head">
+                  Our Process
+                </a>
+              </div>
             </div>
-          </div>
 
-          {/* Website Development Dropdown */}
-          <div className="nav-item dropdown">
-            <a
-              href="#"
-              className="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-              Website Development
-            </a>
-            <div className="dropdown-menu fade-down m-0">
-              <a href="wordpress-development" className="dropdown-item head">
-                WordPress Development
-              </a>
-              <hr className="fga-line" />
-              <a href="laravel-development" className="dropdown-item head">
-                Laravel Development
-              </a>
-              <hr className="fga-line" />
-              <a href="codeigniter-development" className="dropdown-item head">
-                CodeIgnitor Development
-              </a>
-              <hr className="fga-line" />
-              <a href="web-portal-development" className="dropdown-item head">
-                Web Portal Development
-              </a>
-              <hr className="fga-line" />
-              <a href="cms-development" className="dropdown-item head">
-                CMS Development
-              </a>
-              <hr className="fga-line" />
+            {/* Website Designing Dropdown */}
+            <div className="nav-item dropdown">
               <a
-                href="ecommerce-website-development"
-                className="dropdown-item head"
+                href="#"
+                className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
               >
-                Ecommerce Website Development
+                Website Designing
               </a>
+              <div className="dropdown-menu fade-down m-0">
+                <a href="static-website-design" className="dropdown-item head">
+                  Static Website Design
+                </a>
+                <hr className="fga-line" />
+                <a href="dynamic-website-design" className="dropdown-item head">
+                  Dynamic Website Design
+                </a>
+                <hr className="fga-line" />
+                <a
+                  href="ecommerce-website-design"
+                  className="dropdown-item head"
+                >
+                  E-Commerce Website Design
+                </a>
+                <hr className="fga-line" />
+                <a
+                  href="corporate-website-design"
+                  className="dropdown-item head"
+                >
+                  Corporate Website Design
+                </a>
+                <hr className="fga-line" />
+                <a
+                  href="responsive-website-design"
+                  className="dropdown-item head"
+                >
+                  Responsive Website Design
+                </a>
+                <hr className="fga-line" />
+                <a
+                  href="landing-page-website-design"
+                  className="dropdown-item head"
+                >
+                  Landing Page Website Design Services
+                </a>
+              </div>
             </div>
-          </div>
 
-          {/* Other Links */}
-          <a
-            href="website-maintenance-services-in-delhi"
-            className="nav-item nav-link"
-          >
-            Website Maintenance
-          </a>
-          <a href="onpage-seo" className="nav-item nav-link">
-            SEO Services
-          </a>
-          <a href="industries-we-serve-futuregenapps" className="nav-item nav-link">
-            Industries
-          </a>
-          <a href="contact" className="nav-item nav-link">
-            Contact
-          </a>
+            {/* Website Development Dropdown */}
+            <div className="nav-item dropdown">
+              <a
+                href="#"
+                className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                Website Development
+              </a>
+              <div className="dropdown-menu fade-down m-0">
+                <a href="wordpress-development" className="dropdown-item head">
+                  WordPress Development
+                </a>
+                <hr className="fga-line" />
+                <a href="laravel-development" className="dropdown-item head">
+                  Laravel Development
+                </a>
+                <hr className="fga-line" />
+                <a
+                  href="codeigniter-development"
+                  className="dropdown-item head"
+                >
+                  CodeIgnitor Development
+                </a>
+                <hr className="fga-line" />
+                <a href="web-portal-development" className="dropdown-item head">
+                  Web Portal Development
+                </a>
+                <hr className="fga-line" />
+                <a href="cms-development" className="dropdown-item head">
+                  CMS Development
+                </a>
+                <hr className="fga-line" />
+                <a
+                  href="ecommerce-website-development"
+                  className="dropdown-item head"
+                >
+                  Ecommerce Website Development
+                </a>
+              </div>
+            </div>
+
+            {/* Other Links */}
+            <a
+              href="website-maintenance-services-in-delhi"
+              className="nav-item nav-link"
+            >
+              Website Maintenance
+            </a>
+            <a href="onpage-seo" className="nav-item nav-link">
+              SEO Services
+            </a>
+            <a
+              href="industries-we-serve-futuregenapps"
+              className="nav-item nav-link"
+            >
+              Industries
+            </a>
+            <a href="contact" className="nav-item nav-link">
+              Contact
+            </a>
+          </div>
         </div>
-      </div>
 
         {/* Scroll Progress Bar */}
         <div className="header">
           <div className="progress-container">
-             <div
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        zIndex: 9999,
-      }}
-    >
-      <div
-        style={{
-          width: "100%",
-          height: "5px",
-          background: "#f1f1f1",
-        }}
-      >
-        <div
-          style={{
-            width: `${scrollWidth}%`,
-            height: "5px",
-            background: "#F8588B",
-            transition: "width 0.6s ease",
-          }}
-        ></div>
-      </div>
-    </div>
+            <div
+              style={{
+                position: "fixed",
+                top: 0,
+                left: 0,
+                width: "100%",
+                zIndex: 9999,
+              }}
+            >
+              <div
+                style={{
+                  width: "100%",
+                  height: "5px",
+                  background: "#f1f1f1",
+                }}
+              >
+                <div
+                  style={{
+                    width: `${scrollWidth}%`,
+                    height: "5px",
+                    background: "#F8588B",
+                    transition: "width 0.6s ease",
+                  }}
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
