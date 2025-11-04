@@ -10,6 +10,7 @@ import Img from "../assets/web-designing-company-India.png";
 
 
 
+
 //  services img
 
 import Img1 from "../assets/Web-Designing-Services.png";
@@ -28,6 +29,11 @@ import Development from "../assets/3.png";
 import Demo from "../assets/4.png";
 
 
+// rating img 
+
+import google from "../assets/Google-RatingsN.png";
+import facebook from "../assets/Facebook-Ratings.png";
+import justdial from "../assets/JustDial-Ratings.png";
 
 
 // technologies img
@@ -285,19 +291,19 @@ export default function Home() {
 
   const ratings = [
     {
-      img: "src/assets/Google-RatingsN.png",
+      img: google,
       link: "https://g.page/FutureGenApps-SoftwareSolutions",
       alt: "Website Designing Company in India",
       title: "FutureGenApps Google Ratings",
     },
     {
-      img: "src/assets/Facebook-Ratings.png",
+      img: facebook,
       link: "https://www.facebook.com/FutureGenApp",
       alt: "website development company in India",
       title: "FutureGenApps Facebook Ratings",
     },
     {
-      img: "src/assets/JustDial-Ratings.png",
+      img: justdial,
       link: "https://www.justdial.com/Delhi/Future-Gen-Apps-Software-Solutions-Behind-Wave-Cinemas-Kaushambi/011PXX11-XX11-170516110010-F9I5_BZDET",
       alt: "Best Web designing Company in India",
       title: "FutureGenApps JustDial Ratings",
@@ -1482,7 +1488,7 @@ export default function Home() {
               <div className="col-lg-6 fade-up">
                 <center>
                   <img
-                    src="src/assets/web-designing-company-India.png"
+                    src={Img}
                     alt="website development services in India"
                     className="section-img"
                   />
@@ -1573,7 +1579,7 @@ export default function Home() {
                   <img
                     width="450"
                     style={{ marginBottom: "30px" }}
-                    src="src\assets\web-designing-company-India.png"
+                    src={Img}
                     alt="website development"
                   />
                 </center>
