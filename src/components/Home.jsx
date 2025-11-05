@@ -2062,14 +2062,14 @@ export default function Home() {
 
               <div className="col-lg-5 text-center col-mar">
                 <a
-                  style={{ color: "#38E8B6" }}
+                  style={{ color: "#38E8B6"}}
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i
                     className="fa fa-map-marker"
-                    style={{ color: "#38E8B6", fontSize: "30px" }}
+                    style={{ color: "#38E8B6", fontSize: "30px" , marginTop:"10px"}}
                   ></i>
                 </a>
 
