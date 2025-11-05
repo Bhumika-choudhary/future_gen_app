@@ -35,6 +35,18 @@ import google from "../assets/Google-RatingsN.png";
 import facebook from "../assets/Facebook-Ratings.png";
 import justdial from "../assets/JustDial-Ratings.png";
 
+// brand img 
+
+import brand1 from "../assets/Maple-Bear-South-Asia.png"
+import brand2 from "../assets/3S-Graphic-Solutions.png"
+import brand3 from "../assets/HCI-Tech.png"
+import brand4 from "../assets/Greenfields-Public-School-VivekVihar.png"
+import brand5 from "../assets/Quantinox.png"
+import brand6 from "../assets/Cam-Edu-Consult.png"
+import brand7 from "../assets/United-Homez.png"
+import brand8 from "../assets/Ra-Legal.png"
+import brand9 from "../assets/Vivah-Luxury-Weddings.png"
+
 
 // technologies img
 
@@ -73,7 +85,17 @@ import Cambridge from "../assets/cambridge-logo.png";
 import HCI from "../assets/Logo HCI Technologies.png";
 
 
+// blog images 
 
+import blog1 from "../assets/maintaince.jpg";
+import blog2 from "../assets/Organic-Digital-Marketing-FutureGenApps.jpg";
+import blog3 from "../assets/Social bookmarking sites for seo - FutureGenApps.webp";
+
+
+// footer image 
+
+import footer1 from "../assets/justdial-logo.png"
+import footer2 from "../assets/indiamart-logo.png"
 
 
 const clients = [
@@ -315,59 +337,52 @@ export default function Home() {
   const brands = [
     {
       name: "Maple Bear South Asia",
-      // link: "https://www.maplebearsouthasia.com",
-      img: "https://www.futuregenapps.com/frontend/img/Maple-Bear-South-Asia.png",
+      img: brand1,
       title: "website designing in India",
     },
     {
       name: "3 S Graphic Solutions",
-      // link: "https://3sgsolutions.com",
-      img: "https://www.futuregenapps.com/frontend/img/3S-Graphic-Solutions.png",
+      img: brand2,
       title: "Top website developer in India",
     },
     {
       name: "HCI Technologies",
-      // link: "https://www.hcitech.co.in",
-      img: "https://www.futuregenapps.com/frontend/img/HCI-Tech.png",
+      img: brand3,
       title: "Website designing in India",
     },
     {
       name: "Greenfields School Vivek Vihar",
-      // link: "https://www.gfpsvivekvihar.com",
-      img: "https://www.futuregenapps.com/frontend/img/Greenfields-Public-School-VivekVihar.png",
+      img: brand4,
       title: "Website Designing Company India",
     },
     {
       name: "QUANTINOX B2B Solutions",
-      // link: "https://www.quantinox.com",
-      img: "https://www.futuregenapps.com/frontend/img/Quantinox.png",
+      img: brand5,
       title: "Web Designing Company in India",
     },
     {
       name: "Cambridge Education Consultants",
-      // link: "https://www.cameduconsult.com",
-      img: "https://www.futuregenapps.com/frontend/img/Cam-Edu-Consult.png",
+      img: brand6,
       title: "Indian Web Design Company",
     },
     {
       name: "United Homez",
-      // link: "https://www.unitedhomez.com",
-      img: "https://www.futuregenapps.com/frontend/img/United-Homez.png",
+      img: brand7,
       title: "website design samples",
     },
     {
       name: "Rajeshwari & Associates",
-      // link: "https://www.ralegal.co.in",
-      img: "https://www.futuregenapps.com/frontend/img/Ra-Legal.png",
+      img: brand8,
       title: "Best website developer in India",
     },
     {
       name: "Vivah Luxury Weddings",
-      // link: "https://www.vivahluxuryweddings.com",
-      img: "https://www.futuregenapps.com/frontend/img/Vivah-Luxury-Weddings.png",
+      img: brand9,
       title: "website design in India",
     },
   ];
+
+
 
   // why hire
 
@@ -1768,7 +1783,7 @@ export default function Home() {
                   style={{ padding: "10px", boxShadow: "0px 0px 3px 0px gray" }}
                 >
                   <img
-                    src="https://www.futuregenapps.com/frontend/images2024/website%20amc%20services%20company%20in%20India%20-%20FutureGenApps.jpg"
+                    src={blog1}
                     style={{
                       zIndex: -1,
                       height: "315px",
@@ -1824,7 +1839,7 @@ export default function Home() {
                   style={{ padding: "10px", boxShadow: "0px 0px 3px 0px gray" }}
                 >
                   <img
-                    src="https://www.futuregenapps.com/frontend/images2024/What-is-Organic-Digital-Marketing-FutureGenApps.jpg"
+                    src={blog2}
                     style={{
                       zIndex: -1,
                       height: "315px",
@@ -1877,7 +1892,7 @@ export default function Home() {
                   style={{ padding: "10px", boxShadow: "0px 0px 3px 0px gray" }}
                 >
                   <img
-                    src="https://www.futuregenapps.com/frontend/img/Social%20bookmarking%20sites%20for%20seo%20-%20FutureGenApps.webp"
+                    src={blog3}
                     style={{
                       zIndex: -1,
                       height: "315px",
@@ -3215,7 +3230,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="https://www.futuregenapps.com/frontend/img/justdial_-_FutureGenApps.png"
+                      src={footer1}
                       alt="FutureGenApps JustDial Profile"
                       style={{
                         width: "100px",
@@ -3234,7 +3249,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="https://www.futuregenapps.com/frontend/img/indiamart-_futureGenApps.png"
+                      src={footer2}
                       alt="FutureGenApps IndiaMart Profile"
                       style={{
                         width: "100px",
