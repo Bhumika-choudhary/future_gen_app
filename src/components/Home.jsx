@@ -314,19 +314,17 @@ export default function Home() {
   const ratings = [
     {
       img: google,
-      link: "https://g.page/FutureGenApps-SoftwareSolutions",
       alt: "Website Designing Company in India",
       title: "FutureGenApps Google Ratings",
     },
     {
       img: facebook,
-      link: "https://www.facebook.com/FutureGenApp",
       alt: "website development company in India",
       title: "FutureGenApps Facebook Ratings",
     },
     {
       img: justdial,
-      link: "https://www.justdial.com/Delhi/Future-Gen-Apps-Software-Solutions-Behind-Wave-Cinemas-Kaushambi/011PXX11-XX11-170516110010-F9I5_BZDET",
+      // link: "https://www.justdial.com/Delhi/Future-Gen-Apps-Software-Solutions-Behind-Wave-Cinemas-Kaushambi/011PXX11-XX11-170516110010-F9I5_BZDET",
       alt: "Best Web designing Company in India",
       title: "FutureGenApps JustDial Ratings",
     },
@@ -680,7 +678,7 @@ export default function Home() {
                 <center>
                   <a
                     title="Website Development Company in India"
-                    href="website-design-company-in-delhi-ncr"
+                    href=""
                     style={{ zIndex: 200 }}
                     className="button"
                   >
@@ -720,7 +718,7 @@ export default function Home() {
                 <br />
                 <a
                   title="Ecommerce Website Development"
-                  href="ecommerce-website-development-company-in-delhi"
+                  href=""
                   style={{ zIndex: 200, textDecoration: "none" }}
                 >
                   <h4
@@ -740,7 +738,7 @@ export default function Home() {
                 <center>
                   <a
                     title="SEO Company in Delhi"
-                    href="ecommerce-website-development-company-in-delhi"
+                    href=""
                     className="button"
                   >
                     <i
@@ -778,7 +776,7 @@ export default function Home() {
                 </center>
                 <br />
                 <a
-                  href="digital-marketing-company-in-delhi-ncr"
+                  href=""
                   title="Digital Marketing"
                   style={{ zIndex: 200, textDecoration: "none" }}
                 >
@@ -797,7 +795,7 @@ export default function Home() {
                 </p>
                 <center>
                   <a
-                    href="digital-marketing-company-in-delhi-ncr"
+                    href=""
                     title="Seo Company"
                     className="button"
                   >
@@ -842,7 +840,7 @@ export default function Home() {
                 </center>
                 <br />
                 <a
-                  href="mobile-app-development-company-in-delhi"
+                  href=""
                   title="Mobile App Development Company"
                   style={{ zIndex: 200, textDecoration: "none" }}
                 >
@@ -861,7 +859,7 @@ export default function Home() {
                 </p>
                 <center>
                   <a
-                    href="mobile-app-development-company-in-delhi"
+                    href=""
                     title="Mobile App Development Company"
                     className="button"
                   >
@@ -900,7 +898,7 @@ export default function Home() {
                 </center>
                 <br />
                 <a
-                  href="logo-designing-company-in-delhi"
+                  href=""
                   title="Logo Designing Company"
                   style={{ zIndex: 200, textDecoration: "none" }}
                 >
@@ -920,7 +918,7 @@ export default function Home() {
                 </p>
                 <center>
                   <a
-                    href="logo-designing-company-in-delhi"
+                    href=""
                     title="Logo Designing Company"
                     className="button"
                   >
@@ -959,7 +957,7 @@ export default function Home() {
                 </center>
                 <br />
                 <a
-                  href="software-company-in-delhi"
+                  href=""
                   title="Software Development"
                   style={{ zIndex: 200, textDecoration: "none" }}
                 >
@@ -978,7 +976,7 @@ export default function Home() {
                 </p>
                 <center>
                   <a
-                    href="seo-company-in-ghaziabad"
+                    href=""
                     title="Seo Company"
                     className="button"
                   >
@@ -1772,7 +1770,7 @@ export default function Home() {
             {/* Blog 1 */}
             <div className="col-md-4 " style={{}}>
               <a
-                href="website-amc-company"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 title="website designing in India"
@@ -1826,7 +1824,7 @@ export default function Home() {
             {/* Blog 2 */}
             <div className="col-md-4">
               <a
-                href="organic-digital-marketing-and-benefits"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 title="website designing in India"
@@ -1881,7 +1879,7 @@ export default function Home() {
             {/* Blog 3 */}
             <div className="col-md-4">
               <a
-                href="social-bookmarking-sites-list"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 title="website designing in India"
@@ -2045,7 +2043,7 @@ export default function Home() {
                 >
                   <h4 style={{ marginLeft: "10px", marginTop: "20px" }}>
                     <a
-                      href="tel:+917428623109"
+                      href=""
                       style={{ color: "black", textDecoration: "none" }}
                       title="futuregenapps contact number: +91 7428 623109"
                     >
@@ -2054,7 +2052,7 @@ export default function Home() {
                   </h4>
                   <p className="text-center">
                     <a
-                      href="mailto:info@futuregenapps.com"
+                      href=""
                       style={{ color: "black", textDecoration: "none" }}
                       title="futuregenapps contact email: info@futuregenapps.com"
                     >
@@ -2954,7 +2952,7 @@ export default function Home() {
                 <a
                   className="btn btn-link"
                   title="PHP Training"
-                  href="#"
+                  href=""
                   style={{
                     fontSize: "14px",
                     color: "white",
@@ -2967,7 +2965,7 @@ export default function Home() {
                 <a
                   className="btn btn-link"
                   title="Laravel Training"
-                  href="#"
+                  href=""
                   style={{
                     fontSize: "14px",
                     color: "white",
@@ -2980,7 +2978,7 @@ export default function Home() {
                 <a
                   className="btn btn-link"
                   title="C Training"
-                  href="#"
+                  href=""
                   style={{
                     fontSize: "14px",
                     color: "white",
@@ -2993,7 +2991,7 @@ export default function Home() {
                 <a
                   className="btn btn-link"
                   title="C++ Training"
-                  href="#"
+                  href=""
                   style={{
                     fontSize: "14px",
                     color: "white",
@@ -3006,7 +3004,7 @@ export default function Home() {
                 <a
                   className="btn btn-link"
                   title="Wordpress Training"
-                  href="#"
+                  href=""
                   style={{
                     fontSize: "14px",
                     color: "white",
@@ -3152,7 +3150,7 @@ export default function Home() {
                     }}
                   >
                     <a
-                      href="about"
+                      href=""
                       style={{ color: "white", textDecoration: "none" }}
                       title="About FutureGenApps"
                     >
@@ -3162,7 +3160,7 @@ export default function Home() {
                   </li>
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
-                      href="privacy-policy"
+                      href=""
                       style={{ color: "white", textDecoration: "none" }}
                       title="FutureGenApps privacy policy"
                     >
@@ -3172,7 +3170,7 @@ export default function Home() {
                   </li>
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
-                      href="refund-policy"
+                      href=""
                       style={{ color: "white", textDecoration: "none" }}
                       title="FutureGenApps refund policy"
                     >
@@ -3182,7 +3180,7 @@ export default function Home() {
                   </li>
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
-                      href="terms-and-condition"
+                      href=""
                       style={{ color: "white", textDecoration: "none" }}
                       title="Terms & Conditions"
                     >
@@ -3192,7 +3190,7 @@ export default function Home() {
                   </li>
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
-                      href="careers"
+                      href=""
                       style={{ color: "white", textDecoration: "none" }}
                       title="About Job Openings"
                     >
@@ -3202,7 +3200,7 @@ export default function Home() {
                   </li>
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
-                      href="#"
+                      href=""
                       style={{ color: "white", textDecoration: "none" }}
                       title="FutureGenApps Internship"
                     >
@@ -3212,7 +3210,7 @@ export default function Home() {
                   </li>
                   <li style={{ float: "left", marginLeft: "10px" }}>
                     <a
-                      href="#"
+                      href=""
                       style={{ color: "white", textDecoration: "none" }}
                       title="FutureGenApps Training"
                     >
@@ -3997,7 +3995,7 @@ export default function Home() {
                 >
                   Get Free Consultation
                 </button>
-                <a href="tel:+917428623109">
+                <a href="">
                   <button
                     className="fga-btnn mob-col"
                     data-bs-toggle="modal"
