@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="container-fluid head-size  ">
         <div className="row align-items-center">
           {/* Left - Contact Info */}
-          <div className="col-md-5 text-md-start text-center">
+          <div className="col-md-5 text-md-start text-center left-content">
             <p className="mb-0" style={{ fontSize: "14px", display: "flex" }}>
               <a href="" style={{ color: "white" }} title="+91 7428623109">
                 <i className="fa-solid fa-phone"></i> +91 7428623109, +91
@@ -59,7 +59,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/about"
+              to="/"
               style={{
                 color: "white",
                 marginLeft: "20px",
@@ -75,7 +75,7 @@ const Navbar = () => {
             </a> */}
 
             <Link
-              to="/Portfolio"
+              to="/"
               style={{
                 color: "white",
                 marginLeft: "20px",
@@ -86,7 +86,7 @@ const Navbar = () => {
               Portfolio
             </Link>
             <Link
-              to="/Career"
+              to="/"
               style={{
                 color: "white",
                 marginLeft: "20px",
@@ -97,7 +97,7 @@ const Navbar = () => {
               Career
             </Link>
             <Link
-              to="/Blog"
+              to="/"
               style={{
                 color: "white",
                 marginLeft: "20px",
@@ -108,7 +108,7 @@ const Navbar = () => {
               Blog
             </Link>
             <Link
-              to="/EarnMoney"
+              to="/"
               style={{
                 color: "white",
                 marginLeft: "20px",

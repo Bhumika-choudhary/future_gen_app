@@ -183,3 +183,22 @@
     display: flex;
   }
 }
+
+
+@media (max-width: 768px) {
+  /* .head-size {
+    text-align: center;
+    padding: 10px 0;
+  } */
+
+   .head-size a {
+    /* display: block; */
+    text-align: center;
+    /* margin: 4px 0; */
+    font-size: 13px;
+  }
+
+  .left-content{
+    display: none;
+  }
+}

@@ -481,12 +481,12 @@ export default function Home() {
                 <br />
               </h1>
               <br />
-              <p>
+              <p >
                 <a
                   title="Website Design Company in India"
                   href="tel:+917428623109"
                 >
-                  <button className="fga-btnn call-btn">
+                  <button className="fga-btnn call-btn" style={{marginTop:"10px"}}>
                     <i className="fa fa-phone-alt"></i>{" "}
                     <span>+91 7428623109</span>
                   </button>
@@ -496,6 +496,7 @@ export default function Home() {
                   className="fga-btnt email-btn"
                   data-bs-toggle="modal"
                   data-bs-target="#enquiryModal"
+                  style={{marginTop:"10px"}}
                 >
                   <i className="fa fa-envelope"></i>{" "}
                   <span className="our-icon">Send email</span>
@@ -1393,6 +1394,7 @@ export default function Home() {
                     color: "#fff",
                     fontWeight: "500",
                     fontSize: "20px",
+                    marginTop:"10px"
                   }}
                 >
                   Get Free Consultation
@@ -1410,6 +1412,8 @@ export default function Home() {
                       color: "#fff",
                       fontWeight: "500",
                       fontSize: "20px",
+                      marginTop:"10px"
+
                     }}
                   >
                     <i
@@ -3987,6 +3991,8 @@ export default function Home() {
                     color: "#fff",
                     fontWeight: "500",
                     fontSize: "20px",
+                    marginTop:"10px"
+
                   }}
                 >
                   Get Free Consultation
@@ -4004,6 +4010,7 @@ export default function Home() {
                       color: "#fff",
                       fontWeight: "500",
                       fontSize: "20px",
+                      marginTop:"10px"
                     }}
                   >
                     <i
