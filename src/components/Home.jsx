@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Img from "../assets/web-designing-company-India.png";
 
-
+import Iconimg from "../assets/icons1.png"
 
 
 //  services img
@@ -525,7 +525,7 @@ export default function Home() {
                   </h4>
                   <center>
                     <img
-                      src="https://www.futuregenapps.com/frontend/img/icons1.png"
+                      src={Iconimg}
                       alt="website designing in India"
                       title="website development company in India"
                       className="form-icon"
